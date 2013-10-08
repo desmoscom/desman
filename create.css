@@ -1,0 +1,115 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+#calculator {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#header {
+  color: #fff;
+  text-shadow: 0 -1px #222;
+  padding: 10px;
+  line-height: 30px;
+  background: #474747;
+  height: 50px;
+}
+.toggle-done-btn {
+  float: right;
+  margin-top: -3px;
+  border: none !important;
+  padding: 2px 30px !important;
+  -webkit-box-shadow: inset 0 1px rgba(255,255,255,0.2), inset 0 -1px rgba(0,0,0,0.15), 0 0 2px #222 !important;
+  box-shadow: inset 0 1px rgba(255,255,255,0.2), inset 0 -1px rgba(0,0,0,0.15), 0 0 2px #222 !important;
+}
+.toggle-done-btn.done {
+  padding: 2px 17px !important;
+}
+.toggle-done-btn.done i {
+  font-size: 10px;
+}
+.done {
+  display: none;
+}
+body.is-done .done-modal {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+body.is-done .done {
+  display: inline-block;
+}
+body.is-done .editing {
+  display: none;
+}
+.done-modal {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 50;
+  bottom: 0;
+  right: 0;
+  background: #eee;
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+.done-modal .student-preview {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  float: left;
+  clear: right;
+  margin: 10px;
+  border: solid 1px #aaa;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #222;
+  background: #fff;
+}
+.done-modal .student-preview .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.done-modal .student-preview .name {
+  background: #fff;
+  padding: 5px 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #aaa;
+  border-bottom-right-radius: 3px;
+  border-top: 0;
+  border-left: 0;
+  border-top-left-radius: 4px;
+  font-size: 16px;
+  color: #222;
+  text-shadow: none;
+}
+.done-modal .student-preview .stale,
+.done-modal .student-preview .done {
+  display: none;
+}
+.graphpaper,
+.fullview {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

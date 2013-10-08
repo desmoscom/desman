@@ -1,0 +1,56 @@
+.info-container {
+  position: absolute;
+  width: 100%;
+  margin: 340px 0 0;
+}
+.info-container .info {
+  z-index: 1;
+  width: 700px;
+  margin: 0 auto;
+}
+.info-container .info h2 {
+  font-weight: normal;
+}
+.info-container .info .center {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  margin-top: -30px;
+}
+.info-container .info .inspired {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+.info-container .info .inspired a {
+  color: #000;
+}
+.info-container #name {
+  position: absolute;
+  left: 50%;
+  margin-left: -170px;
+  width: 340px;
+}
+.info-container h3 {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+.info-container input {
+  font-size: 20px;
+}
+.info-container input:first-of-type {
+  padding: 5px;
+  width: 250px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+}
+.info-container .btn-go {
+  padding: 5px 20px;
+}
+a.btn-go {
+  padding: 15px 25px !important;
+}

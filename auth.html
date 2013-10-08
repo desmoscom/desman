@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="landing.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="icons.css">
+</head>
+<body>
+<div class="info-container"><div class="info"><div id="name"> <h3>Enter your name(s) to begin:</h3><form id="name" action="" method="POST"><input type="text" name="name"><input type="submit" name="submit" value="Go!" class="btn-go"></form></div></div></div>
+<script src='jquery.js'></script>
+<script src='livecss.js'></script>
+<script src='require.js'></script>
+<script src="desmos.js"></script>
+<script>
+$(function() {
+  $nameInput = $('#name input[type="text"]').focus();
+  
+  $('#name').on('submit', function(evt) {
+    if (!$nameInput.val().length) {
+      alert("Please enter your name!");
+      $nameInput.focus();
+      return false;
+    }
+  });
+});
+</script>
+</body>
+</html>
